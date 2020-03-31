@@ -2,15 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIAppFonts</key>
-	<array>
-		<string>NotoSansHK-Medium.otf</string>
-		<string>NotoSansHK-Thin.otf</string>
-		<string>NotoSansHK-Regular.otf</string>
-		<string>NotoSansHK-Light.otf</string>
-		<string>NotoSansHK-Bold.otf</string>
-		<string>NotoSansHK-Black.otf</string>
-	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

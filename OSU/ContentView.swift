@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var currentView: String = "WelcomeScreen"
     
     var body: some View {
         WelcomeScreen()

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3253BCB24338FAA00DBBC5F /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3253BCA24338FAA00DBBC5F /* Profile.swift */; };
 		F340E9DB24330ED6004AD480 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F340E9DA24330ED6004AD480 /* AppDelegate.swift */; };
 		F340E9DD24330ED6004AD480 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F340E9DC24330ED6004AD480 /* SceneDelegate.swift */; };
 		F340E9DF24330ED6004AD480 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F340E9DE24330ED6004AD480 /* ContentView.swift */; };
@@ -16,9 +17,12 @@
 		F340E9F324332BEF004AD480 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = F340E9F224332BEF004AD480 /* Login.swift */; };
 		F340E9F524333C0D004AD480 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F340E9F424333C0D004AD480 /* WelcomeScreen.swift */; };
 		F340E9F724333C50004AD480 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F340E9F624333C50004AD480 /* Dashboard.swift */; };
+		F340EA0224337163004AD480 /* DashboardIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F340EA0124337163004AD480 /* DashboardIconView.swift */; };
+		F340EA0424337172004AD480 /* DashboardIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F340EA0324337172004AD480 /* DashboardIcon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F3253BCA24338FAA00DBBC5F /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		F340E9D724330ED6004AD480 /* OSU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OSU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F340E9DA24330ED6004AD480 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F340E9DC24330ED6004AD480 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,12 +34,8 @@
 		F340E9F224332BEF004AD480 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		F340E9F424333C0D004AD480 /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
 		F340E9F624333C50004AD480 /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
-		F340E9F924333DA9004AD480 /* NotoSansHK-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansHK-Bold.otf"; sourceTree = "<group>"; };
-		F340E9FA24333DA9004AD480 /* NotoSansHK-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansHK-Light.otf"; sourceTree = "<group>"; };
-		F340E9FB24333DA9004AD480 /* NotoSansHK-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansHK-Medium.otf"; sourceTree = "<group>"; };
-		F340E9FC24333DA9004AD480 /* NotoSansHK-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansHK-Regular.otf"; sourceTree = "<group>"; };
-		F340E9FD24333DA9004AD480 /* NotoSansHK-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansHK-Thin.otf"; sourceTree = "<group>"; };
-		F340E9FE24333DA9004AD480 /* NotoSansHK-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansHK-Black.otf"; sourceTree = "<group>"; };
+		F340EA0124337163004AD480 /* DashboardIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardIconView.swift; sourceTree = "<group>"; };
+		F340EA0324337172004AD480 /* DashboardIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DashboardIcon.swift; path = ../DashboardIcon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,15 +69,17 @@
 			isa = PBXGroup;
 			children = (
 				F340E9DA24330ED6004AD480 /* AppDelegate.swift */,
-				F340E9DC24330ED6004AD480 /* SceneDelegate.swift */,
+				F340EA0124337163004AD480 /* DashboardIconView.swift */,
 				F340E9DE24330ED6004AD480 /* ContentView.swift */,
+				F340E9DC24330ED6004AD480 /* SceneDelegate.swift */,
+				F340EA0324337172004AD480 /* DashboardIcon.swift */,
 				F340E9F624333C50004AD480 /* Dashboard.swift */,
+				F3253BCA24338FAA00DBBC5F /* Profile.swift */,
 				F340E9F424333C0D004AD480 /* WelcomeScreen.swift */,
 				F340E9F224332BEF004AD480 /* Login.swift */,
 				F340E9E024330ED7004AD480 /* Assets.xcassets */,
 				F340E9E524330ED7004AD480 /* LaunchScreen.storyboard */,
 				F340E9E824330ED7004AD480 /* Info.plist */,
-				F340E9F824333D97004AD480 /* Fonts */,
 				F340E9E224330ED7004AD480 /* Preview Content */,
 			);
 			path = OSU;
@@ -89,19 +91,6 @@
 				F340E9E324330ED7004AD480 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		F340E9F824333D97004AD480 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				F340E9FB24333DA9004AD480 /* NotoSansHK-Medium.otf */,
-				F340E9FD24333DA9004AD480 /* NotoSansHK-Thin.otf */,
-				F340E9FC24333DA9004AD480 /* NotoSansHK-Regular.otf */,
-				F340E9FA24333DA9004AD480 /* NotoSansHK-Light.otf */,
-				F340E9F924333DA9004AD480 /* NotoSansHK-Bold.otf */,
-				F340E9FE24333DA9004AD480 /* NotoSansHK-Black.otf */,
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,12 +164,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F340EA0224337163004AD480 /* DashboardIconView.swift in Sources */,
 				F340E9DB24330ED6004AD480 /* AppDelegate.swift in Sources */,
 				F340E9DD24330ED6004AD480 /* SceneDelegate.swift in Sources */,
 				F340E9F524333C0D004AD480 /* WelcomeScreen.swift in Sources */,
 				F340E9DF24330ED6004AD480 /* ContentView.swift in Sources */,
 				F340E9F724333C50004AD480 /* Dashboard.swift in Sources */,
 				F340E9F324332BEF004AD480 /* Login.swift in Sources */,
+				F3253BCB24338FAA00DBBC5F /* Profile.swift in Sources */,
+				F340EA0424337172004AD480 /* DashboardIcon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
