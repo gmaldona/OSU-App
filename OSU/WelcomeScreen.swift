@@ -20,7 +20,6 @@ struct WelcomeScreen: View {
                     if welcomeButton {
                         
                         Image("oswego")
-                            //.transition(.move(edge: .top))
                     }
                     else {
                         Image("oswego")
