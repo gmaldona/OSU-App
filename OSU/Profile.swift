@@ -22,7 +22,7 @@ struct Profile: View {
                     .font(.system(size: 20, weight: .regular, design: .rounded))
                 Text("ID: 804264994")
                     .font(.system(size: 20, weight: .thin, design: .rounded))
-                Text("Overall GPA: 4.0")
+                Text("Overall GPA: 0.00")
                     .font(.system(size: 20, weight: .thin, design: .rounded))
                 
             }
