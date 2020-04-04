@@ -11,7 +11,6 @@ import SwiftUI
 struct DashboardScrolls: View {
     var body: some View {
         VStack {
-            Profile()
             Text("Academics")
                 .font(.system(size: 28, weight: .regular, design: .rounded))
                 .padding(.trailing, UIScreen.main.bounds.size.width / 2)

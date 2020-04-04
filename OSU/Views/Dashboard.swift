@@ -21,6 +21,7 @@ struct Dashboard: View {
                     .font(.system(size: 38, weight: .thin, design: .rounded))
                     .padding(.trailing, UIScreen.main.bounds.size.width / 2)
                     .padding(.bottom, -40)
+                Profile()
                 DashboardScrolls()
                 Spacer()
             }
