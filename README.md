@@ -15,5 +15,5 @@ Making the original SUNY oswego mobile app more modern with SwiftUI
 
 ## Scalable to Other iOS Devices
 
-<img src = "https://github.com/gmaldona/OSU-App/blob/master/Media/ipad.PNG" width=400 style="float: left; margin-right: 10px;"/> 
+<img src = "https://github.com/gmaldona/OSU-App/blob/master/Media/ipad.PNG" width=400 style="float: left; margin-right: 10px;"/>
 
