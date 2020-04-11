@@ -5,7 +5,7 @@ Making the original SUNY oswego mobile app more modern with SwiftUI
 
 <img src = "https://github.com/gmaldona/OSU-App/blob/master/Media/OldUI1.PNG" width=250 style="float: left; margin-right: 10px;"/> <img src = "https://github.com/gmaldona/OSU-App/blob/master/Media/OldUI2.PNG" width=250 style="float: left; margin-right: 10px;"/> 
 
-## The New SUNY Oswego Mobile Application with SwiftUI
+## The New SUNY Oswego Mobile Application with SwiftUI 
 
 <img src = "https://github.com/gmaldona/OSU-App/blob/master/Media/Welcome.png" width=250 style="float: left; margin-right: 10px;"/> <img src = "https://github.com/gmaldona/OSU-App/blob/master/Media/Login.png" width=250 style="float: left; margin-right: 10px;"/> <img src = "https://github.com/gmaldona/OSU-App/blob/master/Media/Dashboard.PNG" width=250 style="float: left; margin-right: 10px;"/> 
 
