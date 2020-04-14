@@ -8,13 +8,16 @@
 
 import SwiftUI
 
+//View that contains the scroll views
 struct DashboardScrolls: View {
     var body: some View {
         VStack {
+            //Academic Scroll View
             Text("Academics")
                 .font(.system(size: 28, weight: .regular, design: .rounded))
                 .padding(.trailing, UIScreen.main.bounds.size.width / 2)
             AcademicScroll()
+            //Resource Scroll View
             Text("Resources")
                 .font(.system(size: 28, weight: .regular, design: .rounded))
                 .padding(.trailing, UIScreen.main.bounds.size.width / 2)

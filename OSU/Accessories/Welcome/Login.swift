@@ -8,20 +8,24 @@
 
 import SwiftUI
 
+//View that contains the elements for the login screen
 struct Login: View {
     
+    //Contains the users username and passwords
     @State var username: String = ""
     @State var password: String = ""
     
     var body: some View {
         VStack() {
+            //Text field for the user to enter their username
             TextField("Username", text: $username)
-                .border(Color.green)
+                .border(Color.init(red: 40/255, green: 100/255, blue: 40/255))
                 .padding(.horizontal, 100)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
-                
+            
+            //Text field for the user to enter their password 
             SecureField("Password", text: $password)
-                .border(Color.green)
+                .border(Color.init(red: 40/255, green: 100/255, blue: 40/255))
                 .padding(.horizontal, 100)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
         }

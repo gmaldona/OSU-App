@@ -28,6 +28,7 @@ struct AcademicScroll: View {
                     VStack {
                         //If the user presses this button, then the user will be directed to the url
                         Button(action: {
+                            //Desired location for the buttons
                             self.urlString = "https://cas-prod.oswego.edu:8443/cas/login?service=https%3A%2F%2Fbanner-app-01.oswego.edu%3A8443%2Fssomanager%2Fc%2FSSB"
                             self.showSafari = true
                         }) {
@@ -36,6 +37,7 @@ struct AcademicScroll: View {
                             .frame(width: 125, height: 125)
                             .foregroundColor(.init(red: 40/255, green: 100/255, blue: 40/255))
                         }
+                        //When a button is pressed, the location (safari) showsd up
                         .sheet(isPresented: self.$showSafari) {
                             SafariView(url: URL(string: self.urlString)!)
                         }

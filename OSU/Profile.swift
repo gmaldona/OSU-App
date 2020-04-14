@@ -8,15 +8,17 @@
 
 import SwiftUI
 
+//This view contains the personal information for each student
 struct Profile: View {
     var body: some View {
         HStack {
+            //Image of the student
             Image("ProfileImage")
                 .clipShape(Circle())
-                .overlay(
-                    Circle().stroke(Color.white, lineWidth: 0.001))
+                .overlay(Circle().stroke(Color.white, lineWidth: 0.001))
                 .shadow(radius: 10)
                 .padding(.trailing, UIScreen.main.bounds.width / 5)
+            //Information about the student
             VStack(alignment: .leading) {
                 Text("Gregory Maldonado")
                     .font(.system(size: 20, weight: .regular, design: .rounded))
