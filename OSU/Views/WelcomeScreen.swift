@@ -8,15 +8,19 @@
 
 import SwiftUI
 
+//View that contains the welcome screen
 struct WelcomeScreen: View {
     
+    //Variable that holds the state of the view - if either of the buttons are pressed , then the elements or view changes
     @State var welcomeButton = false
     @State var loginButton = false
     
     var body: some View {
         VStack(alignment: .center) {
+            //The initial state of the view, before the login button is pressed
             if !loginButton {
                 VStack {
+                    //Oswego logo image
                     Image("oswego").resizable()
                         .frame(width: 250, height: 250)
                 }
@@ -25,8 +29,11 @@ struct WelcomeScreen: View {
                 VStack {
                     //Checks to see if the user clicked the buttom
                     if !welcomeButton {
+                        //This button changes the view to allow the user to enter their login information
                         Button(action: {
+                            //Animation to change elements
                             withAnimation {
+                                //Changes the state of the view
                                 self.welcomeButton = true
                             }
                             }) {
@@ -35,10 +42,13 @@ struct WelcomeScreen: View {
                     }
                     //If the user clicked the button then the login text fields appear
                     else {
+                        //View that contains the elements for the user to login
                         Login()
-                        
+                        //This button allows the user to login into the dashboard with their information
                         Button(action: {
+                            //Animation between views
                             withAnimation {
+                                //Changes the state of the view
                                 self.loginButton.toggle()
                             }
                         }) {
@@ -48,7 +58,9 @@ struct WelcomeScreen: View {
                     }
                 }
             }
+            //If the user logins in with their information, then the dashboard appears
             else {
+                //Calls the dashboard view
                 Dashboard()
             }
         Spacer()

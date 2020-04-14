@@ -7,10 +7,14 @@
 //
 
 import SwiftUI
+import SafariServices
 
+//View that contains the resource buttons in a horizontal scroll view
 struct ResourceScroll: View {
     
+    //Variable that holds the properties for the resource buttons
     @State private var resourcesButton = DashboardIcon.resources()
+    //Variable that holds the state of the view - This variable is in control of showing the safari view
     @State private var showSafari = false
     @State private var urlString = "https://google.com"
     @State private var showExternalWindow = false

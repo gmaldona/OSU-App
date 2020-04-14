@@ -22,6 +22,7 @@
 		F36D46E12435F073000F6490 /* AcademicScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36D46E02435F073000F6490 /* AcademicScroll.swift */; };
 		F36D46E32435F197000F6490 /* ResourceScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36D46E22435F197000F6490 /* ResourceScroll.swift */; };
 		F36D46E52435F249000F6490 /* DashboardScrolls.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36D46E42435F249000F6490 /* DashboardScrolls.swift */; };
+		F3CE5A6324463C4200A1967B /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE5A6224463C4200A1967B /* SafariView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		F36D46E02435F073000F6490 /* AcademicScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcademicScroll.swift; sourceTree = "<group>"; };
 		F36D46E22435F197000F6490 /* ResourceScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceScroll.swift; sourceTree = "<group>"; };
 		F36D46E42435F249000F6490 /* DashboardScrolls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardScrolls.swift; sourceTree = "<group>"; };
+		F3CE5A6224463C4200A1967B /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				F340E9F624333C50004AD480 /* Dashboard.swift */,
+				F3CE5A6224463C4200A1967B /* SafariView.swift */,
 				F340E9DE24330ED6004AD480 /* ContentView.swift */,
 				F340E9F424333C0D004AD480 /* WelcomeScreen.swift */,
 				F3253BCC24339B8300DBBC5F /* MapView.swift */,
@@ -215,6 +218,7 @@
 			files = (
 				F36D46D62435ECA1000F6490 /* Profile.swift in Sources */,
 				F340E9DB24330ED6004AD480 /* AppDelegate.swift in Sources */,
+				F3CE5A6324463C4200A1967B /* SafariView.swift in Sources */,
 				F340E9DD24330ED6004AD480 /* SceneDelegate.swift in Sources */,
 				F36D46E12435F073000F6490 /* AcademicScroll.swift in Sources */,
 				F340E9F524333C0D004AD480 /* WelcomeScreen.swift in Sources */,

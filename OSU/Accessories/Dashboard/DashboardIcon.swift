@@ -9,8 +9,10 @@
 import Foundation
 import SwiftUI
 
+//Properties for the dashboard icons on the dashboard view
 struct DashboardIcon: Identifiable {
     
+    //Variables to hold the properties for each dashboard icon
     let title: String
     let image: String
     let navigation: String
@@ -18,8 +20,10 @@ struct DashboardIcon: Identifiable {
     
 }
 
+//Extension that contains the return methods for the properties for the dashboard icons
 extension DashboardIcon {
     
+    //Return method for all of the academic buttons
     static func academic() -> [DashboardIcon] {
         return [
             DashboardIcon(title: "Grades", image: "GradesImage", navigation: "Website"),
@@ -28,7 +32,7 @@ extension DashboardIcon {
             DashboardIcon(title: "Registration", image: "RegistrationImage", navigation: "Website")
         ]
     }
-    
+    //Return method for all of the resource buttons
     static func resources() -> [DashboardIcon] {
         return [
             DashboardIcon(title: "Dining Menu", image: "DiningMenuImage", navigation: "Website"),
