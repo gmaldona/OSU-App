@@ -18,11 +18,13 @@
 		F340E9F524333C0D004AD480 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F340E9F424333C0D004AD480 /* WelcomeScreen.swift */; };
 		F340E9F724333C50004AD480 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F340E9F624333C50004AD480 /* Dashboard.swift */; };
 		F340EA0424337172004AD480 /* DashboardIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F340EA0324337172004AD480 /* DashboardIcon.swift */; };
-		F36D46D62435ECA1000F6490 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36D46D52435ECA1000F6490 /* Profile.swift */; };
 		F36D46E12435F073000F6490 /* AcademicScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36D46E02435F073000F6490 /* AcademicScroll.swift */; };
 		F36D46E32435F197000F6490 /* ResourceScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36D46E22435F197000F6490 /* ResourceScroll.swift */; };
 		F36D46E52435F249000F6490 /* DashboardScrolls.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36D46E42435F249000F6490 /* DashboardScrolls.swift */; };
 		F3CE5A6324463C4200A1967B /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE5A6224463C4200A1967B /* SafariView.swift */; };
+		F3CE5A652446671D00A1967B /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE5A642446671D00A1967B /* ContactsView.swift */; };
+		F3CE5A6C244667A200A1967B /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE5A6B244667A200A1967B /* Contacts.swift */; };
+		F3CE5A6E244667D100A1967B /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE5A6D244667D100A1967B /* Profile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,11 +41,13 @@
 		F340E9F424333C0D004AD480 /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
 		F340E9F624333C50004AD480 /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
 		F340EA0324337172004AD480 /* DashboardIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardIcon.swift; sourceTree = "<group>"; };
-		F36D46D52435ECA1000F6490 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Profile.swift; path = ../../Profile.swift; sourceTree = "<group>"; };
 		F36D46E02435F073000F6490 /* AcademicScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcademicScroll.swift; sourceTree = "<group>"; };
 		F36D46E22435F197000F6490 /* ResourceScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceScroll.swift; sourceTree = "<group>"; };
 		F36D46E42435F249000F6490 /* DashboardScrolls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardScrolls.swift; sourceTree = "<group>"; };
 		F3CE5A6224463C4200A1967B /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		F3CE5A642446671D00A1967B /* ContactsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		F3CE5A6B244667A200A1967B /* Contacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
+		F3CE5A6D244667D100A1967B /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				F340E9F624333C50004AD480 /* Dashboard.swift */,
+				F3CE5A642446671D00A1967B /* ContactsView.swift */,
 				F3CE5A6224463C4200A1967B /* SafariView.swift */,
 				F340E9DE24330ED6004AD480 /* ContentView.swift */,
 				F340E9F424333C0D004AD480 /* WelcomeScreen.swift */,
@@ -110,6 +115,7 @@
 		F36D46DA2435EE8E000F6490 /* Accessories */ = {
 			isa = PBXGroup;
 			children = (
+				F3CE5A6A2446676F00A1967B /* Contacts */,
 				F36D46DD2435EF5F000F6490 /* Welcome */,
 				F36D46DC2435EF10000F6490 /* Dashboard */,
 			);
@@ -131,7 +137,7 @@
 				F340EA0324337172004AD480 /* DashboardIcon.swift */,
 				F36D46E02435F073000F6490 /* AcademicScroll.swift */,
 				F36D46E22435F197000F6490 /* ResourceScroll.swift */,
-				F36D46D52435ECA1000F6490 /* Profile.swift */,
+				F3CE5A6D244667D100A1967B /* Profile.swift */,
 				F36D46E42435F249000F6490 /* DashboardScrolls.swift */,
 			);
 			path = Dashboard;
@@ -143,6 +149,14 @@
 				F340E9F224332BEF004AD480 /* Login.swift */,
 			);
 			path = Welcome;
+			sourceTree = "<group>";
+		};
+		F3CE5A6A2446676F00A1967B /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				F3CE5A6B244667A200A1967B /* Contacts.swift */,
+			);
+			path = Contacts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,7 +230,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F36D46D62435ECA1000F6490 /* Profile.swift in Sources */,
 				F340E9DB24330ED6004AD480 /* AppDelegate.swift in Sources */,
 				F3CE5A6324463C4200A1967B /* SafariView.swift in Sources */,
 				F340E9DD24330ED6004AD480 /* SceneDelegate.swift in Sources */,
@@ -225,10 +238,13 @@
 				F340E9DF24330ED6004AD480 /* ContentView.swift in Sources */,
 				F340E9F724333C50004AD480 /* Dashboard.swift in Sources */,
 				F36D46E52435F249000F6490 /* DashboardScrolls.swift in Sources */,
+				F3CE5A6E244667D100A1967B /* Profile.swift in Sources */,
 				F340E9F324332BEF004AD480 /* Login.swift in Sources */,
 				F36D46E32435F197000F6490 /* ResourceScroll.swift in Sources */,
 				F3253BCD24339B8300DBBC5F /* MapView.swift in Sources */,
 				F340EA0424337172004AD480 /* DashboardIcon.swift in Sources */,
+				F3CE5A652446671D00A1967B /* ContactsView.swift in Sources */,
+				F3CE5A6C244667A200A1967B /* Contacts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -43,7 +43,6 @@ struct ResourceScroll: View {
                             }
                             //If a button is clicked with a separate view then then view will be called
                             if resource.title == "Maps" || resource.title == "Contacts" {
-                                self.externalWindow = resource.title
                                 self.showExternalWindow = true
                             }
                             //If the view doesnt have a specific view then safari will be called with the url given

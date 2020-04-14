@@ -11,6 +11,7 @@ import MapKit
 
 //View that contains the map view
 struct MapView: UIViewRepresentable {
+    
     func makeUIView(context: Context) -> MKMapView {
         MKMapView(frame: .zero)
     }
