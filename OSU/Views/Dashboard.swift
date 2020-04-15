@@ -14,7 +14,7 @@ struct Dashboard: View {
     
     //Variables that holds the state of the application windows - This variable will be true if the user clicks on one of the buttons to navigate to a different view
     @State private var showExternalWindow = false
-    @State private var externalWindow = ""
+    @State private var externalWindow = "Maps"
     
     var body: some View {
         VStack {
@@ -32,20 +32,25 @@ struct Dashboard: View {
             }
             //If the user clicks on a button that switches the view
             else {
-                //If the user clicks on the maps button, then the map view appears
-                if externalWindow == "Maps" {
-                    //This button returns to the dashboard view
-                    Button(action: {
-                        self.showExternalWindow = false
-                    }) {
-                        Image("DashboardButton").resizable()
-                            .frame(width: 100, height: 50)
-                    }
-                    .padding(.trailing, UIScreen.main.bounds.width / 1.5)
-                    //Calls the view that contains the map view
-                    MapView()
-                        .edgesIgnoringSafeArea(.bottom)
-                }
+//                //If the user clicks on the maps button, then the map view appears
+//                if externalWindow == "Maps" {
+//                    //Overlay the elements
+//                    ZStack {
+//                            //Calls the view that contains the map view
+//                            MapView()
+//                                .edgesIgnoringSafeArea(.bottom)
+//                                .edgesIgnoringSafeArea(.top)
+//                            //This button returns to the dashboard view
+//                            Button(action: {
+//                                self.showExternalWindow = true
+//                            }) {
+//                                Image("DashboardButton").resizable()
+//                                    .frame(width: 120, height: 50)
+//                            }
+//                            .padding(.trailing, UIScreen.main.bounds.width / 1.5)
+//                            .padding(.bottom, UIScreen.main.bounds.height / 1.20 )
+//                    }
+//                }
             }
         }
     }

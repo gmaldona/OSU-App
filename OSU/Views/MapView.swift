@@ -21,7 +21,7 @@ struct MapView: UIViewRepresentable {
         let coordinate = CLLocationCoordinate2D(
                 latitude: 43.450180, longitude: -76.543060)
         //Distance of the camera from the campus
-        let span = MKCoordinateSpan(latitudeDelta: 0.015, longitudeDelta: 0.015)
+        let span = MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02)
         let region = MKCoordinateRegion(center: coordinate, span: span)
         uiView.setRegion(region, animated: true)
     }
