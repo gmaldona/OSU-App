@@ -12,11 +12,12 @@ import SwiftUI
 struct WelcomeScreen: View {
     
     //Variable that holds the state of the view - if either of the buttons are pressed , then the elements or view changes
+    @EnvironmentObject var view: CurrentView
     @State var welcomeButton = false
     @State var loginButton = false
     
     var body: some View {
-        VStack(alignment: .center) {
+        VStack() {
             //The initial state of the view, before the login button is pressed
             if !loginButton {
                 VStack {
@@ -50,6 +51,7 @@ struct WelcomeScreen: View {
                             withAnimation {
                                 //Changes the state of the view
                                 self.loginButton.toggle()
+                                self.view.currentView = "Dashboard"
                             }
                         }) {
                             Image("Login").resizable()
@@ -61,6 +63,7 @@ struct WelcomeScreen: View {
             //If the user logins in with their information, then the dashboard appears
             else {
                 //Calls the dashboard view
+                
                 Dashboard()
             }
         Spacer()

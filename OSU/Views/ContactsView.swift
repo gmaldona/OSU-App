@@ -8,18 +8,36 @@
 
 import SwiftUI
 
+//This view contains the contacts for thr campus
 struct ContactsView: View {
     
+    //Variable that holds the current view
+    @EnvironmentObject var view: CurrentView
+    //Variable that holds all of the contact information
     @State private var contacts = Contacts.contacts()
     
     var body: some View {
         VStack {
+            //Button that allows the user to go back to the dashboard
+            Button(action: {
+                withAnimation {
+                    //Changes the current View to the dashboard
+                    self.view.currentView = "Dashboard"
+                }
+            }) {
+                //Image of the dashboard button
+                Image("DashboardButton").resizable()
+                    .frame(width: 120, height: 50)
+            }
+            .padding(.trailing, UIScreen.main.bounds.width / 1.5)
+            
             Text("Important Contacts")
                 .font(.system(size: 38, weight: .thin, design: .rounded))
-                .padding(.trailing, UIScreen.main.bounds.size.width / 2)
-
+            
+            //List for all of the contacts
             Group {
                 List {
+                    //Loops through all of the contacts and places them in the list
                     ForEach(contacts) { contact in
                         VStack {
                             Text(contact.name)

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F3253BCD24339B8300DBBC5F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3253BCC24339B8300DBBC5F /* MapView.swift */; };
+		F32950B02458C2FA00AD8AE1 /* CurrentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32950AF2458C2FA00AD8AE1 /* CurrentView.swift */; };
 		F340E9DB24330ED6004AD480 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F340E9DA24330ED6004AD480 /* AppDelegate.swift */; };
 		F340E9DD24330ED6004AD480 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F340E9DC24330ED6004AD480 /* SceneDelegate.swift */; };
 		F340E9DF24330ED6004AD480 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F340E9DE24330ED6004AD480 /* ContentView.swift */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		F3253BCC24339B8300DBBC5F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		F32950AF2458C2FA00AD8AE1 /* CurrentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentView.swift; sourceTree = "<group>"; };
 		F340E9D724330ED6004AD480 /* OSU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OSU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F340E9DA24330ED6004AD480 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F340E9DC24330ED6004AD480 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				F340E9DE24330ED6004AD480 /* ContentView.swift */,
 				F340E9F424333C0D004AD480 /* WelcomeScreen.swift */,
 				F3253BCC24339B8300DBBC5F /* MapView.swift */,
+				F32950AF2458C2FA00AD8AE1 /* CurrentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				F36D46E52435F249000F6490 /* DashboardScrolls.swift in Sources */,
 				F3CE5A6E244667D100A1967B /* Profile.swift in Sources */,
 				F340E9F324332BEF004AD480 /* Login.swift in Sources */,
+				F32950B02458C2FA00AD8AE1 /* CurrentView.swift in Sources */,
 				F36D46E32435F197000F6490 /* ResourceScroll.swift in Sources */,
 				F3253BCD24339B8300DBBC5F /* MapView.swift in Sources */,
 				F340EA0424337172004AD480 /* DashboardIcon.swift in Sources */,

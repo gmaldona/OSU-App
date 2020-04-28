@@ -13,13 +13,14 @@ import SafariServices
 struct Dashboard: View {
     
     //Variables that holds the state of the application windows - This variable will be true if the user clicks on one of the buttons to navigate to a different view
+    @EnvironmentObject var view: CurrentView
     @State private var showExternalWindow = false
     @State private var externalWindow = "Maps"
     
     var body: some View {
         VStack {
             //Shows the initial state of the view - once the user logins into the application
-            if !showExternalWindow {
+            if self.view.currentView == "Dashboard" {
                 Text("Dashboard")
                     .font(.system(size: 38, weight: .thin, design: .rounded))
                     .padding(.trailing, UIScreen.main.bounds.size.width / 2)
@@ -30,27 +31,33 @@ struct Dashboard: View {
                 DashboardScrolls()
                 Spacer()
             }
+                
             //If the user clicks on a button that switches the view
-            else {
-//                //If the user clicks on the maps button, then the map view appears
-//                if externalWindow == "Maps" {
-//                    //Overlay the elements
-//                    ZStack {
-//                            //Calls the view that contains the map view
-//                            MapView()
-//                                .edgesIgnoringSafeArea(.bottom)
-//                                .edgesIgnoringSafeArea(.top)
-//                            //This button returns to the dashboard view
-//                            Button(action: {
-//                                self.showExternalWindow = true
-//                            }) {
-//                                Image("DashboardButton").resizable()
-//                                    .frame(width: 120, height: 50)
-//                            }
-//                            .padding(.trailing, UIScreen.main.bounds.width / 1.5)
-//                            .padding(.bottom, UIScreen.main.bounds.height / 1.20 )
-//                    }
-//                }
+            else if self.view.currentView == "Maps" {
+                //If the user clicks on the maps button, then the map view appears
+                    //Overlay the elements
+                ZStack {
+                    //Calls the view that contains the map view
+                    MapView()
+                        .edgesIgnoringSafeArea(.bottom)
+                        .edgesIgnoringSafeArea(.top)
+                    //This button returns to the dashboard view
+                    Button(action: {
+                        withAnimation {
+                            //Changes the current view to the dashboard
+                            self.view.currentView = "Dashboard"
+                        }
+                    }) {
+                        Image("DashboardButton").resizable()
+                            .frame(width: 120, height: 50)
+                    }
+                    .padding(.trailing, UIScreen.main.bounds.width / 1.5)
+                    .padding(.bottom, UIScreen.main.bounds.height / 1.20 )
+                }
+            }
+            
+            else if self.view.currentView == "Contacts" {
+                ContactsView()
             }
         }
     }
