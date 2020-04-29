@@ -27,7 +27,7 @@ extension DashboardIcon {
     static func academic() -> [DashboardIcon] {
         return [
             DashboardIcon(title: "Grades", image: "GradesImage", navigation: "Website"),
-            DashboardIcon(title: "Classes", image: "CoursesImage", navigation: "Website"),
+            DashboardIcon(title: "Classes", image: "CoursesImage", navigation: "Classes"),
             DashboardIcon(title: "DegreeWorks", image: "DegreeWorksImage", navigation: "Website"),
             DashboardIcon(title: "Registration", image: "RegistrationImage", navigation: "Website"),
             DashboardIcon(title: "What If ... Grading", image: "QuestionMarkImage", navigation: "Grading")

@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		F3253BCD24339B8300DBBC5F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3253BCC24339B8300DBBC5F /* MapView.swift */; };
 		F32950B02458C2FA00AD8AE1 /* CurrentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32950AF2458C2FA00AD8AE1 /* CurrentView.swift */; };
+		F32950B22458D1D700AD8AE1 /* WhatIfGradingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32950B12458D1D700AD8AE1 /* WhatIfGradingView.swift */; };
+		F32950B52458E2E200AD8AE1 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32950B42458E2E200AD8AE1 /* NavigationBar.swift */; };
+		F32950B72458E71300AD8AE1 /* CurrentClassList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32950B62458E71300AD8AE1 /* CurrentClassList.swift */; };
+		F32950B92458E73500AD8AE1 /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32950B82458E73500AD8AE1 /* Classes.swift */; };
+		F32950BB2458E8F000AD8AE1 /* ClassesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32950BA2458E8F000AD8AE1 /* ClassesView.swift */; };
 		F340E9DB24330ED6004AD480 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F340E9DA24330ED6004AD480 /* AppDelegate.swift */; };
 		F340E9DD24330ED6004AD480 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F340E9DC24330ED6004AD480 /* SceneDelegate.swift */; };
 		F340E9DF24330ED6004AD480 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F340E9DE24330ED6004AD480 /* ContentView.swift */; };
@@ -31,6 +36,11 @@
 /* Begin PBXFileReference section */
 		F3253BCC24339B8300DBBC5F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		F32950AF2458C2FA00AD8AE1 /* CurrentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentView.swift; sourceTree = "<group>"; };
+		F32950B12458D1D700AD8AE1 /* WhatIfGradingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatIfGradingView.swift; sourceTree = "<group>"; };
+		F32950B42458E2E200AD8AE1 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		F32950B62458E71300AD8AE1 /* CurrentClassList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentClassList.swift; sourceTree = "<group>"; };
+		F32950B82458E73500AD8AE1 /* Classes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classes.swift; sourceTree = "<group>"; };
+		F32950BA2458E8F000AD8AE1 /* ClassesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesView.swift; sourceTree = "<group>"; };
 		F340E9D724330ED6004AD480 /* OSU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OSU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F340E9DA24330ED6004AD480 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F340E9DC24330ED6004AD480 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +73,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F32950B32458E2C200AD8AE1 /* WhatIfGrading */ = {
+			isa = PBXGroup;
+			children = (
+				F32950B42458E2E200AD8AE1 /* NavigationBar.swift */,
+				F32950B62458E71300AD8AE1 /* CurrentClassList.swift */,
+				F32950B82458E73500AD8AE1 /* Classes.swift */,
+			);
+			path = WhatIfGrading;
+			sourceTree = "<group>";
+		};
 		F340E9CE24330ED6004AD480 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +131,8 @@
 				F340E9F424333C0D004AD480 /* WelcomeScreen.swift */,
 				F3253BCC24339B8300DBBC5F /* MapView.swift */,
 				F32950AF2458C2FA00AD8AE1 /* CurrentView.swift */,
+				F32950B12458D1D700AD8AE1 /* WhatIfGradingView.swift */,
+				F32950BA2458E8F000AD8AE1 /* ClassesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -118,6 +140,7 @@
 		F36D46DA2435EE8E000F6490 /* Accessories */ = {
 			isa = PBXGroup;
 			children = (
+				F32950B32458E2C200AD8AE1 /* WhatIfGrading */,
 				F3CE5A6A2446676F00A1967B /* Contacts */,
 				F36D46DD2435EF5F000F6490 /* Welcome */,
 				F36D46DC2435EF10000F6490 /* Dashboard */,
@@ -238,7 +261,11 @@
 				F340E9DD24330ED6004AD480 /* SceneDelegate.swift in Sources */,
 				F36D46E12435F073000F6490 /* AcademicScroll.swift in Sources */,
 				F340E9F524333C0D004AD480 /* WelcomeScreen.swift in Sources */,
+				F32950B52458E2E200AD8AE1 /* NavigationBar.swift in Sources */,
+				F32950BB2458E8F000AD8AE1 /* ClassesView.swift in Sources */,
 				F340E9DF24330ED6004AD480 /* ContentView.swift in Sources */,
+				F32950B22458D1D700AD8AE1 /* WhatIfGradingView.swift in Sources */,
+				F32950B72458E71300AD8AE1 /* CurrentClassList.swift in Sources */,
 				F340E9F724333C50004AD480 /* Dashboard.swift in Sources */,
 				F36D46E52435F249000F6490 /* DashboardScrolls.swift in Sources */,
 				F3CE5A6E244667D100A1967B /* Profile.swift in Sources */,
@@ -248,6 +275,7 @@
 				F3253BCD24339B8300DBBC5F /* MapView.swift in Sources */,
 				F340EA0424337172004AD480 /* DashboardIcon.swift in Sources */,
 				F3CE5A652446671D00A1967B /* ContactsView.swift in Sources */,
+				F32950B92458E73500AD8AE1 /* Classes.swift in Sources */,
 				F3CE5A6C244667A200A1967B /* Contacts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

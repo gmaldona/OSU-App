@@ -11,7 +11,7 @@ import SwiftUI
 
 //View for the academic buttons - This view puts all of the buttons inside a horizontal scroll
 struct AcademicScroll: View {
-    
+    @EnvironmentObject var view: CurrentView
     //Variable that holds the properties for all of the academic buttons
     @State private var academicButton = DashboardIcon.academic()
     //Variable that holds the state of the view - if the safari window should appear
@@ -34,9 +34,17 @@ struct AcademicScroll: View {
                         VStack {
                             //If the user presses this button, then the user will be directed to the url
                             Button(action: {
-                                //Desired location for the buttons
-                                self.urlString = "https://cas-prod.oswego.edu:8443/cas/login?service=https%3A%2F%2Fbanner-app-01.oswego.edu%3A8443%2Fssomanager%2Fc%2FSSB"
-                                self.showSafari = true
+                                
+                                switch academic.title {
+                                case "What If ... Grading":
+                                    self.view.currentView = academic.title
+                                case "Classes":
+                                    self.view.currentView = academic.title
+                                default:
+                                    self.urlString = "https://cas-prod.oswego.edu:8443/cas/login?service=https%3A%2F%2Fbanner-app-01.oswego.edu%3A8443%2Fssomanager%2Fc%2FSSB"
+                                    self.showSafari = true
+                                }
+                                
                             }) {
                             //Image of the button
                             Image(academic.image).resizable()

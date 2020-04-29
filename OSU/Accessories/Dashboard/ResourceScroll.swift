@@ -40,24 +40,18 @@ struct ResourceScroll: View {
                                 Button(action: {
                                     switch resource.title {
                                         //each title is linked to a specific url String(destination)
-                                        case "Dining Menu":
-                                            self.urlString = "https://www.oswego.edu/dining-menu/"
-                                        case "Events":
-                                            self.urlString = "https://www.oswego.edu/campus-life/events"
-                                        case "Athletics":
-                                            self.urlString = "https://www.oswego.edu/student-life/athletics-and-recreation"
+                                    case "Dining Menu":
+                                        self.urlString = "https://www.oswego.edu/dining-menu/"
+                                    case "Events":
+                                        self.urlString = "https://www.oswego.edu/campus-life/events"
+                                    case "Athletics":
+                                        self.urlString = "https://www.oswego.edu/student-life/athletics-and-recreation"
+                                        
                                         default:
-                                            self.urlString = "https://cas-prod.oswego.edu:8443/cas/login?service=https%3A%2F%2Fbanner-app-01.oswego.edu%3A8443%2Fssomanager%2Fc%2FSSB"
+                                            self.view.currentView = resource.title
                                     }
                                     //If a button is clicked with a separate view then then view will be called
-                                    if resource.title == "Maps" || resource.title == "Contacts" {
-                                        withAnimation {
-                                          //  self.showExternalWindow = true
-                                            self.view.currentView = resource.title
-                                        }
-                                    }
-                                    //If the view doesnt have a specific view then safari will be called with the url given
-                                    else {
+                                    if resource.title != "Maps" || resource.title != "Contacts" {
                                         self.showSafari = true
                                     }
                                 })

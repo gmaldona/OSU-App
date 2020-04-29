@@ -59,6 +59,14 @@ struct Dashboard: View {
             else if self.view.currentView == "Contacts" {
                 ContactsView()
             }
+            
+            else if self.view.currentView == "What If ... Grading" {
+                WhatIfGradingView()
+            }
+            
+            else if self.view.currentView == "Classes" {
+                ClassesView()
+            }
         }
     }
 }
