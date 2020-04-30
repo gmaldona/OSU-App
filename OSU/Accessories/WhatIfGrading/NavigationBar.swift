@@ -23,13 +23,8 @@ struct NavigationBar: View {
                     Image("DashboardButton").resizable()
                     .frame(width: 120, height: 50)
                 }
-                .padding(.trailing, UIScreen.main.bounds.width / 2)
-                //Button to add a class 
-                Button(action: {
-                    
-                }){
-                    Image("AdditionButton")
-                }
+                .padding(.trailing, UIScreen.main.bounds.width / 1.5)
+                
             }
         }
     }
