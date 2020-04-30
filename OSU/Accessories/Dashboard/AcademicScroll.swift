@@ -34,15 +34,16 @@ struct AcademicScroll: View {
                         VStack {
                             //If the user presses this button, then the user will be directed to the url
                             Button(action: {
-                                
-                                switch academic.title {
-                                case "What If ... Grading":
-                                    self.view.currentView = academic.title
-                                case "Classes":
-                                    self.view.currentView = academic.title
-                                default:
-                                    self.urlString = "https://cas-prod.oswego.edu:8443/cas/login?service=https%3A%2F%2Fbanner-app-01.oswego.edu%3A8443%2Fssomanager%2Fc%2FSSB"
-                                    self.showSafari = true
+                                withAnimation {
+                                    switch academic.title {
+                                    case "What If ... Grading":
+                                        self.view.currentView = academic.title
+                                    case "Classes":
+                                        self.view.currentView = academic.title
+                                    default:
+                                        self.urlString = "https://cas-prod.oswego.edu:8443/cas/login?service=https%3A%2F%2Fbanner-app-01.oswego.edu%3A8443%2Fssomanager%2Fc%2FSSB"
+                                        self.showSafari = true
+                                    }
                                 }
                                 
                             }) {

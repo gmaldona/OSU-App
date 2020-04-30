@@ -38,17 +38,19 @@ struct ResourceScroll: View {
                             VStack {
                                 //This is the button for each resource - when clicked, the button is directed
                                 Button(action: {
-                                    switch resource.title {
-                                        //each title is linked to a specific url String(destination)
-                                    case "Dining Menu":
-                                        self.urlString = "https://www.oswego.edu/dining-menu/"
-                                    case "Events":
-                                        self.urlString = "https://www.oswego.edu/campus-life/events"
-                                    case "Athletics":
-                                        self.urlString = "https://www.oswego.edu/student-life/athletics-and-recreation"
-                                        
-                                        default:
-                                            self.view.currentView = resource.title
+                                    //withAnimation {
+                                        switch resource.title {
+                                            //each title is linked to a specific url String(destination)
+                                        case "Dining Menu":
+                                            self.urlString = "https://www.oswego.edu/dining-menu/"
+                                        case "Events":
+                                            self.urlString = "https://www.oswego.edu/campus-life/events"
+                                        case "Athletics":
+                                            self.urlString = "https://www.oswego.edu/student-life/athletics-and-recreation"
+                                            
+                                            default:
+                                                self.view.currentView = resource.title
+                                        //}
                                     }
                                     //If a button is clicked with a separate view then then view will be called
                                     if resource.title != "Maps" || resource.title != "Contacts" {

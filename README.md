@@ -1,5 +1,5 @@
 # SUNY Oswego Mobile Application for iOS 
-Making the original SUNY oswego mobile app more modern with SwiftUI   
+Making the original SUNY oswego mobile app more modern with SwiftUI 
  
 ## The Current SUNY Oswego Application UI
 
